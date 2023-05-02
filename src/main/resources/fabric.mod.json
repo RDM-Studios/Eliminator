@@ -13,7 +13,7 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/eliminator/eliminator_icon.png",
-	"environment": "*",
+	"environment": "server",
 	"entrypoints": {
 		"main": [
 			"com.rdm.eliminator.Eliminator"
@@ -26,8 +26,7 @@
 		"fabricloader": ">=0.14.19",
 		"minecraft": "~1.19.2",
 		"java": ">=17",
-		"fabric-api": "*",
-		"midnightlib": ">=1.0.0"
+		"fabric-api": "*"
 	},
 	"suggests": {
 		"another-mod": "*"

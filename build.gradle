@@ -11,6 +11,8 @@ base {
 }
 
 loom {
+	accessWidenerPath = file("src/main/resources/${project.modid}.aw")
+
     runs {
         datagen {
             inherit server
@@ -53,13 +55,9 @@ dependencies {
 	minecraft("com.mojang:minecraft:${project.minecraft_version}")
 	mappings("net.fabricmc:yarn:${project.yarn_mappings_version}:v2")
 	modImplementation("net.fabricmc:fabric-loader:${project.fabric_loader_version}")
-
+	
 	// Libraries
 	modImplementation("net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}")
-	modImplementation("maven.modrinth:midnightlib:${project.midnightlib_version}")
-
-	// Extras
-	modImplementation("maven.modrinth:modmenu:${project.modmenu_version}")
 }
 
 processResources {
